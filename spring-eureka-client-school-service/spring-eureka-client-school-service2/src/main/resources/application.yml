@@ -1,5 +1,5 @@
 server:
-  port: 8097
+  port: 9098
 
 eureka:
   instance:
@@ -14,14 +14,12 @@ eureka:
       duration: 5
 
 spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/pages/
+      suffix: .jsp
   application:
-    name: financial-service
-    
-
-  
-management:
-  security:
-    enabled: false
+    name: school-service-client
 
 logging:
   level:
